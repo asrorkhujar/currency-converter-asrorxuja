@@ -16,13 +16,3 @@ elCurrencyConverterForm.addEventListener('submit', function (evt) {
   //Resultatni korsatish u-n funksiyani chaqirib qo'yamiz
   displayResult();
 });
-
-//Resultatni usha zahoti(online) ko'rsatish uchun
-elAmountInput.addEventListener('keyup', function () {
-  displayResult();
-});
-
-//Selectni almashtirganda online o'zgarishi uchun
-elCurrencySelect.addEventListener('change', function () {
-  displayResult();
-});
