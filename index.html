@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-7 | Currency converter</title>
+  <link rel="stylesheet" href="css/bootstrap5.min.css">
+</head>
+<body class="bg-dark">
+
+  <div class="container py-4 text-center">
+    <h1 class="display-5 mb-4 text-white fw-bold text-uppercase">Valyuta ayirboshlash</h1>
+    <form class="js-currency-converter-form" action="https://echo.htmlacademy.ru" method="GET">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <input class="form-control js-currency-amount-input" type="number" name="money" placeholder="Summa" aria-label="Summa" required>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <select class="form-control js-currency-select" name="currency" aria-label="Valyuta">
+            <option value="1084858">USD</option>
+            <option value="1224045">Euro</option>
+            <option value="169712">Yuan</option>
+            <option value="14704">Rubl</option>
+            <option value="3572892">Dinor</option>
+            <option value="1450420">Funt sterling</option>
+            <option value="9455">Yen</option>
+            <option value="5000000">John Wick tillasi</option>
+          </select>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <output class="form-control d-flex justify-content-center align-items-center">
+            <span class="result-display bg-secondary text-white rounded px-2 me-2">0.00</span>
+            so'm
+          </output>
+        </div>
+        <div class="col-12 mt-3">
+          <button class="btn btn-success d-block w-100 text-uppercase" type="submit">O'girish</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/bootstrap5.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
